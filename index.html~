@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+       <head>
+                <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+                <title>Result</title>
+<meta charset='utf-8'>
+
+        </head>
+        <body>
+                
+
+
+                <div id="zero">
+ 
+                        <div id="navbar">
+
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page.html">Skills</a></li>
+  <li><a href="uni.html">Types of Unicycles</a></li>
+</ul>
+           
+            </div>
+<div id="two">
+<a href="mailto:ezmarte@albany.edu"><p>EMAIL ME!</p></a>
+<center>
+<img src="logo.png" alt="Logo" >
+</center>                </div>
+<br>
+<div id="three">
+<center>
+<img src="main.jpg" alt="Main" width="800" height="350" >
+<!--By Jonathan Benjamin-->
+</center>
+</div>
+<br>
+<div id="four">
+<center>
+<img src="side.jpg" alt="side" width="800" height="385" >
+</center>
+
+</div>
+
+</div>
+<object>
+<iframe width="0%" height="0" scrolling="no" frameborder="0" 
+ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/216501240&amp;auto_play=true;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></object>
+        </body>
+</html>

@@ -1,0 +1,39 @@
+function my() {
+    var x = document.getElementById("myText").value;
+    var jobs = [" Madz One"," Nimbus","Coker "," Kris Holm"];
+    var y = x-1;
+    var r = " ";
+    //without quotes makes undefined string 
+	
+	while(y>=0){
+	//cat
+        r = r+jobs[y];
+	//print
+	document.getElementById("demo").innerHTML = r;
+y--;
+ var o = document.forms["myForm"]["fname"].value;
+    if (o == null || o == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+}
+document.getElementById("myFunction").addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Kris Holm");
+}
+function myF() {
+ 
+ var time = new Date().getHours();
+    if (time < 20) {
+        document.getElementById("demo2").innerHTML = "Nimbus";
+       }else if(time > 21 ){ 
+	document.getElementById("demo2").innerHTML = "Madz One"; 
+       }else {
+	document.getElementById("demo2").innerHTML = "Kris Holm"; 
+
+}
+}
+
+
