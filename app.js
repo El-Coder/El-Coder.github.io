@@ -1,29 +1,24 @@
-function my() {
-	var x = document.getElementById("myText").value;
-	var jobs = [" Madz One", " Nimbus", "Coker ", " Kris Holm"];
-	var y = x - 1;
-	var r = " ";
-	//without quotes makes undefined string 
-	while (y >= 0) {
-		//cat
-		r = r + jobs[y];
-		//print
-		document.getElementById("demo").innerHTML = r;
-		y--;
-		var o = document.forms["myForm"]["fname"].value;
-		if (o == null || o == "") {
-			alert("Name must be filled out");
-			return false;
-		}
-	}
-}
-document.getElementById("myFunction").addEventListener("click", myFunction);
 
-function myFunction() {
+    var text = document.getElementById("userInput");
+	var manufacturer = [" Madz One", "Nimbus", "Coker ", "Kris Holm"];
+	text.addEventListener("keydown", function(e) {
+		if (e.keyCode === 13) {
+		 showMessage(e); 
+		}
+	});
+
+function showMessage(e){
+		if( e.target.value <= 5 ){
+		document.getElementById("demo").innerHTML = manufacturer[e.target.value];
+		}
+}
+
+document.getElementById("myFavoriteUnicycle").addEventListener("click", alertFunction);
+function alertFunction() {
 	alert("Kris Holm");
 }
 
-function myF() {
+function unicycleTire() {
 	var time = new Date().getHours();
 	if (time < 20) {
 		document.getElementById("demo2").innerHTML = "Nimbus";
@@ -73,13 +68,13 @@ google.maps.event.addDomListener(window, "load", function() {
 		position: new google.maps.LatLng(33.808678, -117.918921),
 		map: map,
 		icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
-	}, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+	}, "<h1>Madz One</h1><p>This is home to Madz One Unicycles</p>");
 	var marker1 = createMarker({
 		position: new google.maps.LatLng(33.818038, -117.928492),
 		map: map
-	}, "<h1>Marker 1</h1><p>This is marker 1</p>");
+	}, "<h1>Nimbus</h1><p>This is home to Nimbus Unicycles</p>");
 	var marker2 = createMarker({
 		position: new google.maps.LatLng(33.803333, -117.915278),
 		map: map
-	}, "<h1>Marker 2</h1><p>This is marker 2</p>");
+	}, "<h1>Kris Holm</h1><p>This is home to Kris Holm Unicycles</p>");
 });
