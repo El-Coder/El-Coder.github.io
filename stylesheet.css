@@ -1,8 +1,8 @@
 html,body {
 	height:100%;
 	margin: 0;	
+	background-color: #65C6BB; 
 	background-image: url("http://www.albany.edu/~em826767/final/uni.png");
-	background-color: #65C6BB;
         background-repeat: repeat;
         background-repeat: round;
 }
@@ -18,11 +18,11 @@ html,body {
 }	
 #zero { 
 	position-fixed;
+	background-color: #65C6BB;
 	min-height: 100%;
         min-width:1024px;
         width: 100%;
         height: 100%;
-	background-color: #65C6BB;
 }
 ul {
     list-style-type: none;
